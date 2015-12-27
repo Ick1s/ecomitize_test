@@ -1,0 +1,19 @@
+<?php if ($this->getIsHomePage() && $this->getStatus() == 1): ?>
+    <?php
+    $faq    = $this->getRandomFaq();
+    $helper = $this->helper('ecomitizetest');
+    ?>
+    <?php if ($faq): ?>
+        <div class="faq-content">
+            <div class="faq-title"><h2><?php echo $this->__('FAQ\'s'); ?></h2></div>
+            <div class="faq-list">
+                <ul>
+                    <li>
+                        <div class="question"><?php echo $faq->getQuestion() ?></div>
+                        <div class="answer"><?php echo $helper->filterHtml($faq->getAnswer()) ?></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>

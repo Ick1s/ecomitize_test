@@ -1,0 +1,21 @@
+<?php
+$faqsCollection = $this->getFaqsCollection();
+$helper         = $this->helper('ecomitizetest');
+?>
+<?php if (count($faqsCollection) > 0): ?>
+    <div class="faq-title"><h2><?php echo $this->__('FAQ\'s'); ?></h2></div>
+    <?php echo $this->getPagerHtml() ?>
+    <div class="faq-content">
+        <div class="faq-list">
+            <ul>
+                <?php foreach ($faqsCollection as $faq): ?>
+                    <li>
+                        <div class="question"><?php echo $faq->getQuestion() ?></div>
+                        <div class="answer"><?php echo $helper->filterHtml($faq->getAnswer()) ?></div>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+    <?php echo $this->getPagerHtml() ?>
+<?php endif; ?>

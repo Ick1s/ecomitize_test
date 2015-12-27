@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<widgets>
+    <ecomitizetest type="ecomitizetest/widget_faqs" translate="name description" module="ecomitizetest">
+        <name>Display Custom FAQ's</name>
+        <description>Allows to add custom FAQ's</description>
+        <parameters>
+            <faqs_options>
+                <label>FAQ's Ids</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+            </faqs_options>
+        </parameters>
+    </ecomitizetest>
+</widgets>

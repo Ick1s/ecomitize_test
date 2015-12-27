@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/ecomitize/test.css</name>
+            </action>
+        </reference>
+    </default>
+    <ecomitizetest_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="ecomitizetest/faqs_list" template="ecomitize/list.phtml" name="faqs_list"/>
+        </reference>
+    </ecomitizetest_index_index>
+
+    <cms_index_index>
+        <reference name="content">
+            <block type="ecomitizetest/faqs_random" template="ecomitize/random.phtml" name="random_faq"/>
+        </reference>
+    </cms_index_index>
+</layout>

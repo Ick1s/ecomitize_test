@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <ecomitizetest translate="label">
+            <label>FAQ's</label>
+            <sort_order>500</sort_order>
+        </ecomitizetest>
+    </tabs>
+    <sections>
+        <ecomitizetest translate="label" module="ecomitizetest">
+            <label>FAQ's</label>
+            <tab>ecomitizetest</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>40</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <config translate="label">
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <homepage_block translate="label"
+                                        module="ecomitizetest">
+                            <label>Status for displaying faqs on home page</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </homepage_block>
+                        <list_per_page_values translate="label"
+                                              module="ecomitizetest">
+                            <label>FAQ's per Page on List Allowed Values</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Comma-separated.</comment>
+                            <!--<validate>validate-number</validate>-->
+                            <sort_order>2</sort_order>
+                            <show_in_default>2</show_in_default>
+                            <show_in_website>2</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </list_per_page_values>
+                    </fields>
+                </config>
+            </groups>
+        </ecomitizetest>
+    </sections>
+</config>
+
+

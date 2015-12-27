@@ -1,0 +1,9 @@
+.faq-content{
+    padding: 30px 0 0 0;
+}
+
+.faq-content  .question{
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: 5px 0 10px 0;
+}
